@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors Review</title>
+
+    <style>
+      
+      body {
+        padding: 40px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+    <h1>CSS Colors Review</h1>
+
+    <h2>Color Theory</h2>
+
+    <ul>
+
+      <li><strong>Color Theory Definition</strong>: This is the study of how colors interact with each other and how they affect our perception. It covers color relationships, color harmony, and the psychological impact of color.</li>
+      <li><strong>Primary Colors</strong>: These colors which are yellow, blue, and red, are the fundamental hues from which all other colors are derived.</li>
+      <li><strong>Secondary Colors</strong>: These colors result from mixing equal amounts of two primary colors. Green, orange, and purple are examples of secondary colors.</li>
+      <li><strong>Tertiary Colors</strong>: These colors result from combining a primary color with a neighboring secondary color. Yellow-Green, Blue-Green, and Blue-Violet are examples of tertiary colors.</li>
+      <li><strong>Warm Colors</strong>: These colors which include reds, oranges, and yellows, evoke feelings of comfort, warmth, and coziness.</li>
+      <li><strong>Cool Colors</strong>: These colors which include blues, green, and purples, evoke feelings of calmness, serenity, and professionalism.</li>
+      <li><strong>Color Wheel</strong>: The color wheel is a circular diagram that shows how colors relate to each other. It's an essential tool for designers because it helps them to select color combinations.</li>
+      <li><strong>Analogous Color Schemes</strong>: These color schemes create cohesive and soothing experiences. They have analogous colors, which are adjacent to each other in the color wheel.</li>
+      <li><strong>Complementary Color Schemes</strong>: These color schemes create high contrast and visual impact. Their colors are located on the opposite ends of the color wheel, relative to each other.</li>
+      <li><strong>Triadic Color Scheme</strong>: This color scheme has vibrant colors. They are made from colors that are approximately equidistant from each other. If they are connected, they form an equilateral triangle on the color wheel.</li>
+      <li><strong>Monochromatic Color Scheme</strong>: For this color scheme, all the colors are derived from the same base color by adjusting its lightness, darkness, and saturation. This evokes a feeling of unity and harmony while still creating contrast.</li>
+
+    </ul>
+
+    <h2>Different Ways to Work with Colors in CSS</h2>
+
+    <ul>
+
+      <li><strong>Named Colors</strong>: These colors are predefined color names recognized by browsers. Examples include <code>blue</code>, <code>darkred</code>, <code>lightgreen</code>.</li>
+      <li><strong><code>rgb()</code> Function</strong>: RGB stands for Red, Green, and Blue — the primary colors of light. These three colors are combined in different intensities to create a wide range of colors. the <code>rgb()</code> function allows you to define colors using the RGB color model.</li>
+
+    </ul>
+
+    <code>
+
+      p {
+      <br>
+        color: rgb(255, 0, 0);
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+      <li><strong><code>rgba()</code> Function</strong>: This function adds a fourth value, alpha, that controls the transparency of the color. If not provided, the alpha value defaults to <code>1</code>.</li>
+
+    </ul>
+
+    <code>
+      
+      div {
+      <br>
+        background-color: rgba(0, 0, 255, 0.5);
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+    <li><strong><code>hsl()</code> Function</strong>: HSL stands for Hue, Saturation, and Lightness — three key components that define a color.</li>
+
+    </ul>
+
+    <code>
+      p {
+      <br>
+        color: hsl(120, 100%, 50%);
+      <br>
+      }
+
+      <br>
+      <br>
+
+      div {
+      <br>
+        background-color: hsla(0, 100%, 50%, 0.5);
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+      <li><strong>Hexadecimal</strong>: A hex code (short for hexadecimal code) is a six-character string used to represent colors in the RGB color model. The "hex" refers to the base-16 numbering system, which uses digits 0 to 9 and letters A to F.</li>
+
+    </ul>
+
+    <code>
+
+      h1 {
+      <br>
+        color: #FF5733; /* A reddish-orange color */
+      <br>
+      }
+
+      <br>
+      <br>
+
+      p {
+      <br>
+        background-color: #4CAF50; /* A shade of green */
+      <br>
+      }
+
+    </code>
+
+    <h2>Linear and Radial Gradients</h2>
+
+    <ul>
+      
+      <li><strong>Linear Gradients</strong>: These gradients create a gradual blend between colors along a straight line. You can control the direction of this line using keywords like <code>to top</code>, <code>to right</code>, <code>to bottom right</code>, or angles like <code>45deg</code>. You can use any valid CSS color and as many color stops as you would like.</li>
+
+    </ul>
+
+    <code>
+
+      .linear-gradient {
+      <br>
+        background: linear-gradient(45deg, red, #33FF11, rgba(100, 100, 255, 0.5));
+        <br>
+        height: 40vh;
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+      <li><strong>Radial Gradients</strong>: These gradients create circular or elliptical gradients that radiate from a central point.</li>
+
+    </ul>
+
+    <code>
+
+      .radial-gradient {
+      <br>
+        background: radial-gradient(circle, red, blue);
+        <br>
+        height: 40vh;
+      <br>
+      }
+
+    </code>
+
+  </body>
+
+</html>

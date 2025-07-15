@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Review</title>
+
+    <style>
+    
+      body {
+        padding: 50px;
+      }
+
+    </style>
+  
+  </head>
+
+  <body>
+    
+    <h1>CSS Flexbox Review</h1>
+    <h2>Introduction to CSS Flexbox and Flex Model</h2>
+    
+    <ul>
+
+      <li><strong>Definition</strong>: CSS flexbox is a one-dimensional layout model that allows you to arrange elements in rows and columns within a container.</li>
+      <li><strong>Flex Model</strong>: This model defines how flex items are arranged within a flex container. Every flex container has two axes: the main axis and the cross axis.</li>
+
+    </ul>
+
+    <h2>The <code>flex-direction</code> Property</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: This property sets the direction of the main axis. The default value of <code>flex-direction</code> is <code>row</code>, which places all the flex items on the same row, in the direction of your browser's default language (left to right or right to left).</li>
+      <li><strong><code>flex-direction: row-reverse;</code></strong>: This reverses the items in the row.</li>
+      <li><strong><code>flex-direction: column;</code></strong>: This will align the flex items vertically instead of horizontally.</li>
+      <li><strong><code>flex-direction: column-reverse;</code></strong>: This reverses the order of the flex items vertically.</li>
+
+    </ul>
+
+    <h2>The <code>flex-wrap</code> Property</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: This property determines how flex items are wrapped within a flex container to fit the available space. <code>flex-wrap</code> can take three possible values: <code>nowrap</code>, <code>wrap</code>, and <code>wrap-reverse</code>.</li>
+      <li><strong><code>flex-wrap: nowrap;</code></strong>: This is the default value. Flex items won't be wrapped onto a new line, even if their width exceed the container's width.</li>
+      <li><strong><code>flex-wrap: wrap;</code></strong>: This property will wrap the items when they exceed the width of their container.</li>
+      <li><strong><code>flex-wrap: wrap-reverse;</code></strong>: This property will wrap flex items in reverse order.</li>
+      <li><strong><code>flex-flow</code> Property</strong>: This property is a shorthand property for <code>flex-direction</code> and <code>flex-wrap</code>.</li>
+
+    </ul>
+
+    <code>
+      
+      flex-flow: column wrap-reverse;
+
+    </code>
+    
+    <h2>The <code>justify-content</code> Property</h2>
+    
+    <ul>
+    
+      <li><strong>Definition</strong>: This property aligns the child elements along the main axis of the flex container.</li>
+      <li><strong><code>justify-content: flex-start;</code></strong>: In this case, the flex items will be aligned to the start of the main axis. This could be horizontal or vertical.</li>
+      <li><strong><code>justify-content: flex-end;</code></strong>: In this case, the flex items are aligned to the end of the main axis, horizontally or vertically.</li>
+      <li><strong><code>justify-content: center;</code></strong>: This centers the flex items along the main axis.</li>
+      <li><strong><code>justify-content: space-between;</code></strong>: This will distribute the elements evenly along the main axis.</li>
+      <li><strong><code>justify-content: space-around;</code></strong>: This will distribute flex items evenly within the main axis, adding a space before the first item and after the last item.</li>
+      <li><strong><code>justify-content: space-evenly;</code></strong>: This will distribute the items evenly along the main axis.</li>
+    
+    </ul>
+    
+    <h2>The <code>align-items</code> Property</h2>
+    
+    <ul>
+    
+      <li><strong>Definition</strong>: This property is used to distribute items along the cross axis. Remember that the cross axis is perpendicular to the main axis.</li>
+      <li><strong><code>align-items: center;</code></strong>: This is used to center the items along the cross axis.</li>
+      <li><strong><code>align-items: flex-start;</code></strong>: This aligns the items to the start of the cross axis.</li>
+      <li><strong><code>align-items: stretch;</code></strong>: This is used to stretch the flex items along the cross axis.</li>
+    
+    </ul>
+
+  </body>
+
+</html>
+

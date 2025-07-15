@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+
+  </head>
+
+  <body>
+    
+    <h2>Styling Lists</h2>
+
+    <ul>
+
+      <li><strong><code>line-height</code> Property</strong>: This property is used to create space between lines of text. The accepted <code>line-height</code> values include the keyword <code>normal</code>, numbers, percentages and length units like the <code>em</code> unit.</li>
+      <li><strong><code>list-style-type</code> Property</strong>: This property is used to specify the marker for a list item. Acceptable values can include a circle, disc, or decimal.</li>
+      <li><strong><code>list-style-position</code> Property</strong>: This property is used to set the position for the list marker. The only two acceptable values are inside and outside.</li>
+      <li><strong><code>list-style-image</code> Property</strong>: This property is used to use an image for the list item marker. A common use case is to use the <code>url</code> function with a value set to a valid image location.</li>
+
+    </ul>
+    
+    <h2>Spacing list items using <code>margin</code></h2>
+    
+    <ul>
+    
+      <li>Apart from <code>line-height</code>, margins can also be used in CSS to enhance the spacing and readability of list items.</li>
+      <li>Margins create space outside each <code>li</code> element, allowing control over the gap between list items.</li>
+      <li><code>margin-bottom</code> is used to create space below each list item. For example, <code>margin-bottom: 10px;</code> will create a 10-pixel gap below each list item.</li>
+    
+    </ul>
+    
+    <h2>Styling Links</h2>
+    
+    <ul>
+      <li><strong><code>pseudo-class</code></strong>: This is a keyword added to a selector that allows you to select elements based on a particular state. Common states would include the <code>:hover</code>, <code>:visited</code> and <code>:focus</code> states.</li>
+      <li><strong><code>:link pseudo-class</code></strong>: This pseudo-class is used to style links that have not be visited by the user.</li>
+      <li><strong><code>:visited pseudo-class</code></strong>: This pseudo-class is used to style links where a user has already visited.</li>
+      <li><strong><code>:hover pseudo-class</code></strong>: This pseudo-class is used to style an elements where a user is actively hovering over them.</li>
+      <li><strong><code>:focus pseudo-class</code></strong>: This pseudo-class is used to style an element when it receives focus. Examples would include <code>input</code> or <code>select</code> elements where the clicks or tabs on the element to focus it.</li>
+      <li><strong><code>:active pseudo-class</code></strong>: This pseudo-class is used to style an element that was activated by the user. A common example would be when the user clicks on a button.</li>
+    
+    </ul>
+    
+    <h2>Working with Backgrounds and Borders</h2>
+    
+    <ul>
+      <li><strong><code>background-size</code> Property</strong>: This property is used to set the background size for an element. Some common values include <code>cover</code> for the background image to cover the entire element and <code>contain</code> for the background image to fit within the element.</li>
+      <li><strong><code>background-repeat</code> Property</strong>: This property is used to determine how background images should be repeated along the horizontal and vertical axes. The default value for <code>background-repeat</code> is <code>repeat</code> meaning the image will repeat both horizontally and vertically. You can also specify that there should be no repeat by using the <code>no-repeat</code> property.</li>
+      <li><strong><code>background-position</code> Property</strong>: This property is used to specify the position of the background image. It can be set to a specific length, percentage, or keyword values like <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>, and <code>center</code>.</li>
+      <li><strong><code>background-attachment</code> Property</strong>: This property is used to specify whether the background image should scroll with the content or remain fixed in place. The main values are <code>scroll</code> (default), where the background image scrolls with the content, and <code>fixed</code>, where the background image stays in the same position on the screen.</li>
+      <li><strong><code>background-image</code> Property</strong>: This property is used to set the background image of an element. You can set multiple background images at the same time and use either the <code>url</code>, <code>radial-gradient</code> or <code>linear-gradient</code> functions as values.</li>
+      <li><strong><code>background</code> Property</strong>: This is the shorthand property for setting all background properties in one declaration. Here is an example of setting the background image and setting it to not repeat: <code>background: no-repeat url("example-url-goes-here");</code></li>
+      <li><strong>Good Contrast for Background and Foreground Colors</strong>: It is important to ensure that the background and foreground colors have good contrast to make the text readable. The Web Content Accessibility Guidelines (WCAG) recommend a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text.</li>
+    
+    </ul>
+    
+    <h2>Borders</h2>
+    
+    <ul>
+    
+      <li><strong><code>border-top</code> Property</strong>: This property is used to set the styles for the top border of an element. <code>border-top: 3px solid blue;</code> sets a 3-pixel-wide solid blue border on the top side of the element.</li>
+      <li><strong><code>border-right</code> Property</strong>: This property is used to set the styles for the right border of an element. <code>border-right: 2px solid red;</code> sets a 2-pixel-wide solid red border on the right side of the element.</li>
+      <li><strong><code>border-bottom</code> Property</strong>: This property is used to set the styles for the bottom border of an element. <code>border-bottom: 1px dashed green;</code> sets a 1-pixel-wide dashed green border on the bottom side of the element.</li>
+      <li><strong><code>border-left</code> Property</strong>: This property is used to set the styles for the left border of an element. <code>border-left: 4px dotted orange;</code> sets a 4-pixel-wide dotted orange border on the left side of the element.</li>
+      <li><strong><code>border</code> Property</strong>: This is the shorthand property for setting the width, style, and color of an element's border. <code>border: 1px solid black;</code> sets a 1-pixel-wide solid black border.</li>
+      <li><strong><code>border-radius</code> Property</strong>: This property is used to create rounded corners for an element's border.</li>
+      <li><strong><code>border-style</code> Property</strong>: This property is used to set the style of an element's border. Some accepted values include <code>solid</code>, <code>dashed</code>, <code>dotted</code>, and <code>double</code>.</li>
+    
+    </ul>
+    
+    <h2>Gradients</h2>
+    
+    <ul>
+      <li><strong><code>linear-gradient()</code> Function</strong>: This CSS function is used to create a transition between multiple colors along a straight line.</li>
+      <li><strong><code>radial-gradient()</code> Function</strong>: This CSS function creates an image that radiates from a particular point, like a circle or an ellipse, and gradually transitions between multiple colors.</li>
+    
+    </ul>
+
+  </body>
+
+</html>

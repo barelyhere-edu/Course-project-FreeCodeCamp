@@ -1,0 +1,47 @@
+/* 1. :focus pseudo-class for input and textarea */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 2. :invalid pseudo-class for input, select, textarea */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* 3. :valid pseudo-class for input, select, textarea */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* 4. :hover pseudo-class for button */
+button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 5. :checked pseudo-class for .radio-group input[type="radio"] */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #28a745;
+  background-color: #e6ffe6;
+  box-shadow: 0 0 5px #28a745;
+}
+
+/* 6. :checked pseudo-class to change label text color */
+.radio-group input[type="radio"]:checked + label {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* 7. :first-of-type pseudo-class for first input */
+input:first-of-type {
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #6c63ff;
+}

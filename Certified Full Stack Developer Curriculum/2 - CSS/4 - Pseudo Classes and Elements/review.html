@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes Review</title>
+
+
+    <style>
+
+      body {
+        padding: 50px;
+      }
+    
+    </style>
+
+  </head>
+  
+  <body>
+  
+    <h1>CSS Pseudo-classes Review</h1>
+
+    <h2>User Action Pseudo-classes</h2>
+
+    <ul>
+
+      <li><strong>Pseudo-classes Definition</strong>: These are special CSS keywords that allow you to select an element based on its specific state or position.</li>
+      <li><strong>User Action Pseudo-classes</strong>: These are special keywords that allow you to change the appearance of elements based on user interactions, improving the overall user experience.</li>
+      <li><strong><code>:active</code> Pseudo-class</strong>: This pseudo-class lets you select the active state of an element, like clicking on a button.</li>
+      <li><strong><code>:hover</code> Pseudo-class</strong>: This pseudo-class defines the hover state of an element.</li>
+      <li><strong><code>:focus</code> Pseudo-class</strong>: This pseudo-class applies styles when an element gains focus, typically through keyboard navigation or when a user clicks into a form input.</li>
+      <li><strong><code>:focus-within</code> Pseudo-class</strong>: This pseudo-class is used to apply styles to an element when it or any of its descendants have focus.</li>
+
+    </ul>
+
+    <h2>Input Pseudo-classes</h2>
+
+    <ul>
+
+      <li><strong>Input Pseudo-classes</strong>: These pseudo-classes are used to target HTML <code>input</code> elements based on the state they are in before and after user interaction.</li>
+      <li><strong><code>:enabled</code> Pseudo-class</strong>: This pseudo-class is used to target form buttons or other elements that are currently enabled.</li>
+      <li><strong><code>:disabled</code> Pseudo-class</strong>: This pseudo-class lets you style an interactive element in disabled mode.</li>
+      <li><strong><code>:checked</code> Pseudo-class</strong>: This pseudo-class is used to indicate to the user that it is checked.</li>
+      <li><strong><code>:valid</code> Pseudo-class</strong>: This pseudo-class targets the input fields that meet the validation criteria.</li>
+      <li><strong><code>:invalid</code> Pseudo-class</strong>: This pseudo-class targets the input fields that do not meet the validation criteria.</li>
+      <li><strong><code>:in-range</code> and <code>:out-of-range</code> Pseudo-classes</strong>: These pseudo-classes apply styles to elements based on whether their values are within or outside specified range constraints.</li>
+      <li><strong><code>:required</code> Pseudo-class</strong>: This pseudo-class targets <code>input</code> elements that have the <code>required</code> attribute. It signals to the user that they must fill out the field to submit the form.</li>
+      <li><strong><code>:optional</code> Pseudo-class</strong>: This pseudo-class applies styles input elements that are not required and can be left empty.</li>
+      <li><strong><code>:autofill</code> Pseudo-class</strong>: This pseudo-class applies styles to input fields that the browser automatically fills with saved data.</li>
+
+    </ul>
+
+    <h2>Location Pseudo-classes</h2>
+
+    <ul>
+
+      <li><strong>Location Pseudo-classes</strong>: These pseudo-classes are used for styling links and elements that are targeted within the current document.</li>
+      <li><strong><code>:any-link</code> Pseudo-class</strong>: This pseudo-class is a combination of the :link and :visited pseudo-classes. So, it matches any anchor element with an href attribute, regardless of whether it's visited or not.</li>
+      <li><strong><code>:link</code> Pseudo-class</strong>: This pseudo-class allows you to target all unvisited links on a webpage. You can use it to style links differently before the user clicks on them.</li>
+      <li><strong><code>:local-link</code> Pseudo-class</strong>: This pseudo-class targets links that point to the same document. It can be useful when you want to differentiate internal links from external ones.</li>
+      <li><strong><code>:visited</code> Pseudo-class</strong>: This pseudo-class targets a link the user has visited.</li>
+      <li><strong><code>:target</code> Pseudo-class</strong>: This pseudo-class is used to apply styles to an element that is the target of a URL fragment.</li>
+      <li><strong><code>:target-within</code> Pseudo-class</strong>: This pseudo-class applies styles to an element when it or one of its descendants is the target of a URL fragment.</li>
+
+    </ul>
+
+    <h2>Tree-structural Pseudo-classes</h2>
+
+    <ul>
+
+      <li><strong>Tree-structural Pseudo-classes</strong>: These pseudo-classes allow you to target and style elements based on their position within the document tree.</li>
+      <li><strong><code>:root</code> Pseudo-class</strong>: This pseudo-class is usually the root <code>html</code> element. It helps you target the highest level in the document so you can apply a common style to the entire document.&nbsp;</li>
+      <li><strong><code>:empty</code> Pseudo-class</strong>: Empty elements, that is, elements with no children other than white space, are also included in the document tree. That's why there's an <code>:empty</code> pseudo-class to target empty elements.</li>
+      <li><strong><code>:nth-child(n)</code> Pseudo-class</strong>: This pseudo-class allows you to select elements based on their position within a parent.</li>
+      <li><strong><code>:nth-last-child(n)</code> Pseudo-class</strong>: This pseudo-class enables you to select elements by counting from the end.</li>
+      <li><strong><code>:first-child</code> Pseudo-class</strong>: This pseudo-class selects the first element in a parent element or the document.</li>
+      <li><strong><code>:last-child</code> Pseudo-class</strong>: This pseudo-class selects the last element in a parent element or the document.</li>
+      <li><strong><code>:only-child</code> Pseudo-class</strong>: This pseudo-class selects the only element in a parent element or the document.</li>
+      <li><strong><code>:first-of-type</code> Pseudo-class</strong>: This pseudo-class selects the first occurrence of a specific element type within its parent.</li>
+      <li><strong><code>:last-of-type</code> Pseudo-class</strong>: This pseudo-class selects the last occurrence of a specific element type within its parent.</li>
+      <li><strong><code>:nth-of-type(n)</code> Pseudo-class</strong>: This pseudo-class allows you to select a specific element within its parent based on its position among siblings of the same type.</li>
+      <li><strong><code>:only-of-type</code> Pseudo-class</strong>: This pseudo-class selects an element if it's the only one of its type within its parent.</li>
+
+    </ul>
+
+    <h2>Functional Pseudo-classes</h2>
+
+    <ul>
+
+      <li><strong>Functional Pseudo-classes</strong>: Functional pseudo-classes allow you to select elements based on more complex conditions or relationships. Unlike regular pseudo-classes which target elements based on a state (for example, :hover, :focus), functional pseudo-classes accept arguments.</li>
+      <li><strong><code>:is()</code> Pseudo-class</strong>: This pseudo-class takes a list of selectors (ex. <code>ol</code>, <code>ul</code>) and selects an element that matches one of the selectors in the list.</li>
+
+    </ul>
+
+    <code>
+
+      &lt;p class="example"&gt;This text will change color.&lt;/p&gt;
+      <br>
+      &lt;p&gt;This text will not change color.&lt;/p&gt;
+      <br>
+      &lt;p&gt;This text will not change color.&lt;/p&gt;
+      <br>
+      &lt;p class="this-works-too"&gt;This text will change color.&lt;/p&gt;
+
+      <br><br>
+
+      p:is(.example, .this-works-too) {
+        color: red;
+      }
+
+    </code>
+
+    <ul>
+
+      <li><strong><code>:where()</code> Pseudo-class</strong>: This pseudo-class takes a list of selectors (ex. <code>ol</code>, <code>ul</code>) and selects an element that matches one of the selectors in the list. The difference between <code>:is</code> and <code>:where</code> is that the latter will have a specificity of 0.</li>
+
+    </ul>
+
+    <code>
+
+      :where(h1, h2, h3) {
+      <br>
+        margin: 0;
+        <br>
+        padding: 0;
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+      <li><strong><code>:has()</code> Pseudo-class</strong>: This pseudo-class is often dubbed the <code>"parent"</code> selector because it allows you to style elements that contain child elements specified in the selector list.</li>
+
+    </ul>
+
+    <code>
+
+      article:has(h2) {
+      <br>
+        border: 2px solid hotpink;
+      <br>
+      }
+
+    </code>
+
+    <ul>
+      
+      <li><strong><code>:not()</code> Pseudo-class</strong>: This pseudo-class is used to select elements that do not match the provided selector.</li>
+
+    </ul>
+
+    <code>
+
+      <br>
+      p:not(.example) {
+      <br>
+        color: blue;
+      <br>
+      }
+
+    </code>
+
+    <h2>Pseudo-elements</h2>
+
+    <ul>
+
+      <li><strong><code>::before</code> Pseudo-element</strong>: This pseudo-element uses the <code>content</code> property to insert cosmetic content like icons just before the element.</li>
+      <li><strong><code>::after</code> Pseudo-element</strong>: This pseudo-element uses the <code>content</code> property to insert cosmetic content like icons just after the element.</li>
+      <li><strong><code>::first-letter</code> Pseudo-element</strong>: This pseudo-element targets the first letter of an element's content, allowing you to style it.</li>
+      <li><strong><code>::marker</code> Pseudo-element</strong>: This pseudo-element lets you select the marker (bullet or numbering) of list items for styling.</li>
+
+    </ul>
+
+  </body>
+
+</html>

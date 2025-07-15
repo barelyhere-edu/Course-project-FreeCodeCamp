@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Forms Review</title>
+
+    <style>
+    
+    body {
+      padding: 50px;
+    }
+      
+    </style>
+
+  </head>
+
+  <body>
+    
+    <h1>Styling Forms Review</h1>
+    
+    <h2>Best Practices for Styling Inputs</h2>
+  
+    <ul>
+
+      <li><strong>Styling Inputs</strong>: As with all text elements, you need to ensure the styles you apply to text inputs are accessible. This means the font needs to be adequately sized, and the color needs to have sufficient contrast with the background. Input elements are also focusable. When you are editing your styles, you should take care that you preserve a noticeable indicator when the element has focus, such as a bold border.</li>
+
+    </ul>
+
+    <h2>Using <em>appearance: none</em> for Inputs</h2>
+
+    <ul>
+
+      <li><strong><em>appearance: none</em></strong>: Browsers apply default styling to a lot of elements. The <em>appearance: none</em> CSS property gives you complete control over the styling, but comes with some caveats. When building custom styles for input elements, you will need to make sure focus and error indicators are still present.</li>
+    
+    </ul>
+  
+    <h2>Commons Issues Styling <em>datetime-local</em> and <em>color</em> Properties</h2>
+
+    <ul>
+
+      <li><strong>Common Issues</strong>: These special types of inputs rely on complex pseudo-elements to create things like date and color pickers. This presents a significant challenge for styling these inputs. One challenge is that the default styling is entirely browser-dependent, so the CSS you write to make the picker look the way you intend may be entirely different on another browser.</li>
+
+    </ul>
+  
+  </body>
+
+</html>

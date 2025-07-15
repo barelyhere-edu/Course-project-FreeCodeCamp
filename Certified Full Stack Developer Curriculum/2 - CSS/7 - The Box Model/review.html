@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts and Effects Review</title>
+
+    <style>
+    
+    body {
+      padding: 50px;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+    <h1>CSS Layouts and Effects Review</h1>
+
+    <h2>CSS Overflow Property</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: Overflow refers to the way elements handle content that exceeds, or "overflows", the size of the containing element. Overflow is two-dimensional.</li>
+      <li><strong><code>overflow-x</code></strong>: The x-axis determines horizontal overflow.</li>
+      <li><strong><code>overflow-y</code></strong>: the y-axis determines vertical overflow.</li>
+      <li><strong><code>overflow</code></strong>: Shorthand property for <code>overflow-x</code> and <code>overflow-y</code>. If given one value, both overflows will use it. If given two values, the <code>overflow-x</code> will use the first, and the <code>overflow-y</code> will use the second.</li>
+
+    </ul>
+
+    <h2>CSS Transform Property</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: This property enables you to apply various transformations to elements, such as rotating, scaling, skewing, or translating (moving) them in 2D or 3D space.</li>
+      <li><strong><code>translate()</code> Function</strong>: This function is used to move an element from its current position.</li>
+      <li><strong><code>scale()</code> Function</strong>: This function allows you to change the size of an element.</li>
+      <li><strong><code>rotate()</code> Function</strong>: This function allows you to rotate an element.</li>
+      <li><strong><code>skew()</code> Function</strong>: This function allows you to skew an element.</li>
+      <li><strong>Transforms and Accessibility</strong>: If you're using transform to hide or reveal content, make sure that the content is still accessible to screen readers and keyboard navigation. Hidden content should be truly hidden, such as by using <code>display: none</code> or <code>visibility: hidden</code>, rather than simply being visually moved off-screen.</li>
+
+    </ul>
+
+    <h2>The Box Model</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: In the CSS box model, every element is surrounded by a box. This box consists of four components: the content area, <code>padding</code>, <code>border</code>, <code>margin</code>.</li>
+      <li><strong>Content Area</strong>: The content area is the innermost part of the box. It's the space that contains the actual content of an element, like text or images.</li>
+      <li><strong><code>padding</code></strong>: The padding is the area immediately after the content area. It's the space between the content area and the border of an element.</li>
+      <li><strong><code>border</code></strong>: The border is the outer edge or outline of an element in the CSS box model. It's the visual boundary of the element.</li>
+      <li><strong><code>margin</code></strong>: The margin is the space outside the border of an element. It determines the distance between an element and other elements around it.</li>
+
+    </ul>
+
+    <h2>Margin Collapse</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: This behavior occurs when the vertical margins of adjacent elements overlap, resulting in a single margin equal to the larger of the two. This behavior applies only to vertical margins (top and bottom), not horizontal margins (left and right).</li>
+
+    </ul>
+
+    <h2>The <code>content-box</code> and <code>border-box</code> Property Values</h2>
+
+    <ul>
+
+      <li><strong><code>box-sizing</code> Property</strong>: This property is used to determine on the final <code>width</code> and <code>height</code> is calculated for an HTML element.</li>
+      <li><strong><code>content-box</code> Value</strong>: In the <code>content-box</code> model, the <code>width</code> and <code>height</code> that you set for an element determine the dimensions of the content area but they don't include the <code>padding</code>, <code>border</code>, or <code>margin</code>.</li>
+      <li><strong><code>border-box</code> Value</strong>: With <code>border-box</code>, the <code>width</code> and <code>height</code> of an element include the content area, the <code>padding</code>, and the <code>border</code>, but they don't include the <code>margin</code>.</li>
+
+    </ul>
+
+    <h2>CSS Reset</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: A CSS reset is a stylesheet that removes all or some of the default formatting that web browsers apply to HTML elements. Third party options for CSS resets include <code>sanitize.css</code> and <code>normalize.css</code>.</li>
+
+    </ul>
+
+    <h2>CSS Filter Property</h2>
+
+    <ul>
+
+      <li><strong>Definition</strong>: This property can be used to create various effects such as blurring, color shifting, and contrast adjustment.</li>
+      <li><strong><code>blur()</code> Function</strong>: This function applies a Gaussian blur to the element. The amount is defined in pixels and represents the radius of the blur.</li>
+      <li><strong><code>brightness()</code> Function</strong>: This function adjusts the brightness of the element. A value of 0% will make the element completely black, while values over 100% will increase the brightness.</li>
+      <li><strong><code>contrast()</code> Function</strong>: This function adjusts the contrast of the element. A value of 0% will make the element completely grey, 100% will make the element appear normally, and values greater than 100% will increase the contrast.</li>
+      <li><strong><code>grayscale()</code> Function</strong>: This function converts the element to grayscale. The amount is defined as a percentage, where 100% is completely grayscale and 0% leaves the image unchanged.</li>
+      <li><strong><code>sepia()</code> Function</strong>: This function applies a sepia tone to the element. Like grayscale, it uses a percentage value.</li>
+      <li><strong><code>hue-rotate()</code> Function</strong>: This function applies a hue rotation to the element. The value is defined in degrees and represents a rotation around the color circle.</li>
+
+    </ul>
+
+  </body>
+</html>
