@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Accessibility Review</title>
+
+    <style>
+  
+      body {
+        padding: 20px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      .text-border {
+        border: solid 1px cadetblue;
+      }
+
+      code {
+        display: block;
+        width: 650px;
+        padding: 4px;
+        margin-left: 20px;
+        border: solid 1px bisque;
+      }
+
+    </style>
+  
+  </head>
+
+  <body>
+
+    <h1>CSS Accessibility Review</h1>
+    
+    <h2>Color Contrast Tools</h2>
+
+    <ul>
+
+      <li><span>WebAIM's Color Contrast Checker</span>: This online tool allows you to input the foreground and background colors of your design and instantly see if they meet the Web Content Accessibility Guidelines (WCAG) standards.</li>
+      <li><span>TPGi Colour Contrast Analyzer</span>: This is a free color contrast checker that allows you to check if your websites and apps meet the Web Content Accessibility Guidelines (WCAG) standards. This tool also comes with a Color Blindness Simulator feature which allows you to see what your website or app looks like for people with color vision issues.</li>
+
+    </ul>
+
+    <h2>Accessibility Tree</h2>
+
+    <p>Accessibility tree is a structure used by assistive technologies, such as screen readers, to interpret and interact with the content on a webpage.</p>
+
+    <h2><span class="text-border">max()</span> Function</h2>
+
+    <p>The max() function returns the largest of a set of comma-separated values:</p>
+
+    <code>
+
+    img {
+    <br>
+    &nbsp;width: max(250px, 25vw);
+    <br>
+    }
+
+    </code>
+
+    <p>In the above example, the width of the image will be 250px if the viewport width is less than 1000 pixels. If the viewport width is greater than 1000 pixels, the width of the image will be 25vw. This is because 25vw is equal to 25% of the viewport width.</p>
+
+    <h2>Best Practices with CSS and Accessibility</h2>
+
+    <ul>
+
+      <li><span class="text-border">display: none;</span>: Using <span class="text-border">display: none;</span> means that screen readers and other assistive technologies won't be able to access this content, as it is not included in the accessibility tree. Therefore, it is important to use this method only when you want to completely remove content from both visual presentation and accessibility.</li>
+      <li><span class="text-border">visibility: hidden;</span>: This property and value hides the content visually but keeps it in the document flow, meaning it still occupies space on the page. These elements will also no longer be read by screen readers because they will have been removed from the accessibility tree.</li>
+      <li><span class="text-border">.sr-only</span> CSS class: This is a common technique used to visually hide content while keeping it accessible to screen readers.</li>
+
+    </ul>
+
+    <code>
+
+      .sr-only {
+      <br>
+      &nbsp;position: absolute;
+      <br>
+      &nbsp;width: 1px;
+      <br>
+      &nbsp;height: 1px;
+      <br>
+      &nbsp;padding: 0;
+      <br>
+      &nbsp;margin: -1px;
+      <br>
+      &nbsp;overflow: hidden;
+      <br>
+      &nbsp;clip: rect(0, 0, 0, 0);
+      <br>
+      &nbsp;white-space: nowrap;
+      <br>
+      &nbsp;border: 0;
+      <br>
+      }
+
+    </code>
+
+    <ul>
+
+      <li><span class="text-border">scroll-behavior: smooth;</span>: This property and value enables a smooth scrolling behavior.</li>
+      <li><span class="text-border">prefers-reduced-motion</span> <span>feature</span>: This is a media feature that can be used to detect the user's animation preference.</li>
+
+    </ul>
+  
+    <code>
+
+      @media (prefers-reduced-motion: no-preference) {
+      <br>
+      &nbsp;* {
+      <br>
+      &nbsp;&nbsp;scroll-behavior: smooth;
+      <br>
+      &nbsp;}
+      <br>  
+      }
+
+    </code>
+
+    <p>In the above example, smooth scrolling is enabled if the user doesn't have animation preference set on their device.</p>
+
+    <h2>Hiding Content with HTML Attributes</h2>
+
+    <ul>
+
+      <li><span class="text-border">aria-hidden</span> <span>attribute</span>: Used to hide an element from people using assistive technology such as screen readers. For example, this can be used to hide decorative images that do not provide any meaningful content.</li>
+
+      <li><span class="text-border">hidden</span> <span>attribute</span>: This attribute is supported by most modern browsers and hides content both visually and from the accessibility tree. It can be easily toggled with JavaScript.</li>
+
+    </ul>
+
+    <code>
+
+      &lt;p aria-hidden&gt;This paragraph is visible for sighted users, but is hidden from assistive technology.&lt;/p&gt;
+      <br>
+      &lt;p hidden&gt;This paragraph is hidden from both sighted users and assistive technology.&lt;/p&gt;
+
+    </code>
+
+    <h2>Accessibility Issue of the <span>placehorlder</span> Attribute</h2>
+
+    <p>Using placeholder text is not great for accessibility. Too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.</p>
+
+  </body>
+
+</html>
